@@ -25,6 +25,13 @@ private lateinit var binding: ActivityMainBinding
         val btnlogin = findViewById<Button>(R.id.button2)
         val email = findViewById<EditText>(R.id.editTextNumber4)
         btnlogin.setOnClickListener{
+            if(email.text.toString().trim().length==0){
+                val alertDialogBuilder = AlertDialog.Builder(this)
+                alertDialogBuilder.setTitle("empty!")
+                val alertDialog = alertDialogBuilder.create()
+                alertDialog?.show()
+
+            }
             val alertDialogBuilder = AlertDialog.Builder(this)
             alertDialogBuilder.setTitle("Welcome!")
             val alertDialog = alertDialogBuilder.create()
