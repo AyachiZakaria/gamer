@@ -7,9 +7,15 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="91dp" />
+        android:layout_width="263dp"
+        android:layout_height="383dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginEnd="74dp"
+        android:layout_marginBottom="174dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
