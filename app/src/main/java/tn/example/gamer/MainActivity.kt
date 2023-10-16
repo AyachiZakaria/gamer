@@ -29,6 +29,7 @@ private lateinit var binding: ActivityMainBinding
         val emailRegex = "^[A-Za-z0-9+_.-]+@esprit.tn+\$"
         val btnlogin = findViewById<Button>(R.id.button2)
         val email = findViewById<EditText>(R.id.textInputEditText4)
+        val password = findViewById<EditText>(R.id.textInputEditText2)
         val forgotpassword = findViewById<TextView>(R.id.textView3)
         val facebook = findViewById<ImageView>(R.id.imageView2)
         val google = findViewById<ImageView>(R.id.imageView3)
@@ -45,13 +46,9 @@ private lateinit var binding: ActivityMainBinding
             snack.show()
         }
         btnlogin.setOnClickListener {
-            if(email.text.toString().length==0)
+            if(email.text.toString().length==0 || password.text.toString().length==0 || !(email.text.toString().matches(emailRegex.toRegex())))
             {
-                val snack = Snackbar.make(it,"empty",Snackbar.LENGTH_LONG)
-                snack.show()
-            }
-            else{
-                val snack = Snackbar.make(it,email.text.toString(),Snackbar.LENGTH_LONG)
+                val snack = Snackbar.make(it,"You have some errors in your input!",Snackbar.LENGTH_LONG)
                 snack.show()
             }
 
