@@ -27,7 +27,7 @@ private lateinit var binding: ActivityMainBinding
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val emailRegex = "^[A-Za-z0-9+_.-]+@esprit.tn+\$"
-        val btnlogin = findViewById<Button>(R.id.button2)
+        val btnlogin = findViewById<Button>(R.  id.button2)
         val email = findViewById<EditText>(R.id.textInputEditText4)
         val password = findViewById<EditText>(R.id.textInputEditText2)
         val forgotpassword = findViewById<TextView>(R.id.textView3)
