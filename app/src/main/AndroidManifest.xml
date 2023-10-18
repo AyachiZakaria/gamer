@@ -15,7 +15,7 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".forgotpasswordactivity"></activity>
         <activity
-            android:name="."
+            android:name=".HomeActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -62,11 +62,13 @@
 
         <Button
             android:id="@+id/bt1"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:icon ="@drawable/baseline_home_24_foreground"
             android:layout_width="160dp"
             android:layout_height="60dp"
             android:contentDescription="Button 1 for Fragment 1"
-            android:text="Fragment1"
-            android:textSize="20sp" />
+            android:text="News"
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/bt2"
