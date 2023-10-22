@@ -56,6 +56,7 @@
         android:layout_height="77dp"
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_horizontal"
+        android:foregroundTint="#FF0808"
         android:orientation="horizontal"
         tools:context=".HomeActivity"
         tools:viewBindingIgnore="true">
@@ -63,32 +64,33 @@
         <ImageButton
             android:id="@+id/bt1"
             style="@style/Widget.MaterialComponents.Button.Icon"
-            android:src ="@drawable/baseline_home_24_foreground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Button 1 for Fragment 1"
-            app:tint="#ff0000"/>
+            android:src="@drawable/baseline_home_24_foreground"
+            app:tint="#ff0000" />
 
         <ImageButton
             android:id="@+id/bt2"
             style="@style/Widget.MaterialComponents.Button.Icon"
-            android:src ="@drawable/store_foreground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Button 2 for Fragment 2"
+            android:src="@drawable/store_foreground"
             android:text="Fragment 2"
-            app:tint="#ff0000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:tint="#ff0000" />
+
         <ImageButton
             android:id="@+id/bt3"
             style="@style/Widget.MaterialComponents.Button.Icon"
-            android:src ="@drawable/profile_foreground"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Button 2 for Fragment 2"
+            android:src="@drawable/profile_foreground"
             android:text="Fragment 2"
-            app:tint="#ff0000"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            app:tint="#ff0000" />
     </LinearLayout>
 
 
